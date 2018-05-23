@@ -1,0 +1,25 @@
+step for setting a simulation:
+
+1 - generate a packing with the desired amount of particles. Different options to do so. You can do it by running yade and its GUI, using the triaxialTest simulation.
+- launch yade
+- press F12
+- select 'generate' tab
+- choose 'TriaxialTest'
+- set of parameters I usually use: stabilityCriterion=0.005, compactionFrictionDeg=0.1, internamCompaction=True
+- define the number of particles (numberOfGrains) and the dimensions (defing upper and lower corner of the parallelepipedic domain)
+- press generate
+- run the simulation (you can close the view for faster computation).
+- the particles should be growing in the defined bounding box
+- after a certain time, the simulation pauses and 2 files are generated in the current directory (.spheres and xml files).
+- you can stop the simulation, the packing is created and spheres are in .spheres file (you can rename it to call it after in every script).
+
+2 - calibrate the packing to the desired properties
+- non need to bother with mechanical properties, they were already determined to ensure the packing to behave as Colton sandstone
+- run the coordinationNumber.py script to determine the interaction range (intR) that gives a coordination number K=10. The calibration to Colton sandstone was done for this value. If K!=10, the packing will not behave as Colton sandstone. If K=10, it will!
+- run the permeametre.py script to calibrate the pipe scaling factor (pFactor) so the macroscopic permeability correspond to the one you want (pfactor=1.80e-11 gives a macroscopic permeability k=1e-16 [m2] for the sample 111_10k which is approximately equal to the permeability of Colton sandstone): in this test, a pressure gradient is applied along the X direction of the sample and the permeability is computed according to Darcy's law.
+
+3 - generate the DFN (pre-existing crack where the injection will take place). You can do it with Blender or anything else. Just make sure to create a .stl file (here: penny_R0.1.stl).
+
+4 - run the injection test: hydraulicInjection.py
+
+5 - you can plot the results with plot.py and see what is happening with Paraview (cracks vtk files are in current folder, flow vtk files are in VTK folder). Rk: if you run 2 simulations in the same folder, vtk files will be overwritten). A text file containing all cracks (time, position, size) is generated in current folder. It can be used for further analysis (e.g directional plot or even clustering cracks depending on their spatial and temporal distribution).
