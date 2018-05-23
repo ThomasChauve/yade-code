@@ -1,0 +1,6 @@
+description		!OMP_NUM_THREADS	Y135	Y24	SXX	SYY	SZZ	FOLDER		NAME
+L5-midY-dev	        4			16e9	32e9	-9.e6	-6.e6	-6.e6	'L5-midY-dev/'	'-L5-midY-dev'
+L5-midY-hyd		4			16e9	32e9	-6.e6	-6.e6	-6.e6	'L5-midY-hyd/'	'-L5-midY-hyd'
+L5-mid2Y-dev	        4			32e9	16e9	-9.e6	-6.e6	-6.e6	'L5-mid2Y-dev/'	'-L5-mid2Y-dev'
+L5-mid2Y-hyd		4			32e9	16e9	-6.e6	-6.e6	-6.e6	'L5-mid2Y-hyd/'	'-L5-mid2Y-hyd'
+
