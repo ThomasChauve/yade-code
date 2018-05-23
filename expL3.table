@@ -1,0 +1,6 @@
+description		!OMP_NUM_THREADS	Y2	Y13	SXX	SYY	SZZ	FOLDER		NAME
+L3-midY-dev	        4			16e9	32e9	-9.e6	-6.e6	-6.e6	'L3-midY-dev/'	'-L3-midY-dev'
+L3-midY-hyd		4			16e9	32e9	-6.e6	-6.e6	-6.e6	'L3-midY-hyd/'	'-L3-midY-hyd'
+L3-mid2Y-dev	        4			32e9	16e9	-9.e6	-6.e6	-6.e6	'L3-mid2Y-dev/'	'-L3-mid2Y-dev'
+L3-mid2Y-hyd		4			32e9	16e9	-6.e6	-6.e6	-6.e6	'L3-mid2Y-hyd/'	'-L3-mid2Y-hyd'
+
