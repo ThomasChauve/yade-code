@@ -1,0 +1,8 @@
+from yade import export
+tt=TriaxialTest(StabilityCriterion=.001, compactionFrictionDeg=0.1,internalCompaction=True, numberOfGrains=3000, upperCorner=(0.005,0.01,0.005), radiusStdDev=0.3 )
+tt.generate("5105mm_3k_polydisperse.yade")
+O.load('5105mm_3k_polydisperse.yade')
+
+O.run(20000,1)
+
+export.text('5105mm_3k_polydisperse_1.spheres')
