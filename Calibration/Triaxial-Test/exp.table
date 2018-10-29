@@ -1,0 +1,7 @@
+description		!OMP_NUM_THREADS	sigma3_conf	MAX	RATE	YOUNG	ALPHA	TENS	COH	OUT
+Calibration-1		4      			-10e6		1e5	-0.02	6e9	0.01	3e6	25e6	'Cal-HTOC-Y06e9-A0d01-T3e6-C25e6'
+Calibration-2		4      			-10e6		1e5	-0.02	8e9	0.01	3e6	25e6	'Cal-HTOC-Y08e9-A0d01-T3e6-C25e6'
+Calibration-3		4      			-10e6		1e5	-0.02	10e9	0.01	3e6	25e6	'Cal-HTOC-Y10e9-A0d01-T3e6-C25e6'
+Calibration-1b		4      			-10e6		1e5	-0.02	14e9	0.05	3e6	25e6	'Cal-LTOC-Y14e9-A0d05-T3e6-C25e6'
+Calibration-2b		4      			-10e6		1e5	-0.02	16e9	0.05	3e6	25e6	'Cal-LTOC-Y16e9-A0d05-T3e6-C25e6'
+Calibration-3b		4      			-10e6		1e5	-0.02	18e9	0.05	3e6	25e6	'Cal-LTOC-Y18e9-A0d05-T3e6-C25e6'
